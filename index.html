@@ -21,39 +21,44 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
             rel="stylesheet"
     />
-    <title>Tv size diffenece calculator</title>
+    <title>Tv size differece calculator</title>
 </head>
-<body>
-<div class="container">
-        <div class="flex-row m-5">
-            <div class="col-4">
-                <div class="form-group my-2">
-                    <input type="number" pattern="\d+" id="large" class="form-control" required/>
-                    <label class="form-label" for="large">Inches on the biggest screen</label>
-                </div>
-                <div class="form-group my-2">
-                    <input type="number" pattern="\d+" id="small" class="form-control" required/>
-                    <label class="form-label" for="small">Inches on the smallest screen</label>
-                </div>
-            </div>
+<body class="bg-secondary">
+<div id="container" class="shadow-5 bg-dark">
+    <div class="flex-row m-5" id="error_container" style="display:none;">
+        <div class="col">
+            <p class="text-danger">Error: <span id="error"></span></p>
         </div>
-        <div class="flex-row m-5">
-            <div class="col">
-                <button type="button" onclick="calculate();" class="btn btn-primary">Calculate</button>
-            </div>
-
-        </div>
+    </div>
     <div class="flex-row m-5">
         <div class="col">
-            <p>Result:<span id="result"></span></p>
+            <h1 class="text-center text-light">Tv size differece calculator</h1>
+        </div>
+    </div>
+    <div class="flex-row m-5">
+        <div class="col-12">
+            <div class="form-group my-5">
+                <label class="form-label text-light" for="large">Inches on the biggest screen</label>
+                <input type="number" pattern="\d+" placeholder="Biggest" id="large" class="form-control" required/>
+            </div>
+            <div class="form-group my-5">
+                <label class="form-label text-light" for="small">Inches on the smallest screen</label>
+                <input type="number" pattern="\d+" placeholder="Smallest" id="small" class="form-control" required/>
+            </div>
+        </div>
+    </div>
+    <div class="flex-row m-5">
+        <div class="col">
+            <button type="button" onclick="calculate();" class="btn btn-primary">Calculate</button>
         </div>
 
     </div>
+    <div class="flex-row m-5">
+        <div class="col">
+            <p class="text-light">Result:<span id="result"></span></p>
+        </div>
+    </div>
 </div>
-
-
-
-
     <script src="calculations.js"></script>
 </body>
 </html>
