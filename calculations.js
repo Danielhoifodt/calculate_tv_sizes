@@ -6,7 +6,7 @@ function calculate() {
 	let small = document.getElementById("small").value
 
 	//Check to see if inputs have errors
-	if (large === 0 || small === 0) {
+	if (large == "" || small == "") {
 		document.getElementById("error_container").style.display = "flex"
 		document.getElementById("error").innerHTML = "You need to fill in all fields!"
 		document.getElementById("result").innerHTML = ""
