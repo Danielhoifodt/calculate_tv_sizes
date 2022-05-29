@@ -4,7 +4,7 @@ function calculate() {
 	//Get value from the inputs
 	let large = document.getElementById("large").value
 	let small = document.getElementById("small").value
-	console.log(large, small)
+	
 	//Check to see if inputs have errors
 	if (large === 0 || small === 0) {
 		document.getElementById("error_container").style.display = "flex"
