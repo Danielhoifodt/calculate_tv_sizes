@@ -21,7 +21,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
             rel="stylesheet"
     />
-    <title>Tv størrelser</title>
+    <title>Tv size diffenece calculator</title>
 </head>
 <body>
 <div class="container">
@@ -29,23 +29,23 @@
             <div class="col-4">
                 <div class="form-group my-2">
                     <input type="number" pattern="\d+" id="large" class="form-control" required/>
-                    <label class="form-label" for="large">Tommer på den største skjermen</label>
+                    <label class="form-label" for="large">Inches on the biggest screen</label>
                 </div>
                 <div class="form-group my-2">
                     <input type="number" pattern="\d+" id="small" class="form-control" required/>
-                    <label class="form-label" for="small">Tommer på den minste skjermen</label>
+                    <label class="form-label" for="small">Inches on the smallest screen</label>
                 </div>
             </div>
         </div>
         <div class="flex-row m-5">
             <div class="col">
-                <button type="button" onclick="calculate();" class="btn btn-primary">Regn ut</button>
+                <button type="button" onclick="calculate();" class="btn btn-primary">Calculate</button>
             </div>
 
         </div>
     <div class="flex-row m-5">
         <div class="col">
-            <p>Resultat:<span id="result"></span></p>
+            <p>Result:<span id="result"></span></p>
         </div>
 
     </div>
@@ -54,6 +54,6 @@
 
 
 
-    <script src="utregning.js"></script>
+    <script src="calculations.js"></script>
 </body>
 </html>

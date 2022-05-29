@@ -14,7 +14,7 @@ function calculate()
 	let percent = Math.round(((area_large - area_small)/area_large)*100)
 
 	//Output text with the variables into the result html tag.
-	document.getElementById("result").innerHTML = " Den store skjermen er " + percent + " % større enn den miste skjermen. Og de er henholdsvis " + area_large + " cm^2 og " + area_small + " cm^2.";
+	document.getElementById("result").innerHTML = " The big screen is " + percent + " % bigger than the small screen. And the are accordingly " + area_large + " cm^2 and " + area_small + " cm^2.";
 }
 
 
@@ -26,10 +26,10 @@ function convertToArea(number)
 	//Find the height of the tv by mulitplying the diagonal by 0.49
 	let cm_horisontal = cm_diagonal * 0.49
 
-	//Use the formula for straigh angle trinagles a^2 = b^2 + c^2 to find the last side
-	let katet = Math.sqrt((cm_diagonal*cm_diagonal) - (cm_horisontal*cm_horisontal))
-	
+	//Use the formula for straigh angle trinagles a^2 = b^2 + c^2 to find the "kathetos"
+	let kathetos = Math.sqrt((cm_diagonal*cm_diagonal) - (cm_horisontal*cm_horisontal))
+
 	//Return the area in cm^2
-	return katet*cm_diagonal
+	return kathetos*cm_diagonal
 
 }
