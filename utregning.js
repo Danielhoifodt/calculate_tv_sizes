@@ -8,7 +8,7 @@ function calculate()
 	let area_large = convertToArea(large)
 	let area_small = convertToArea(small)
 
-	let percent = Math.round((area_small *100)/area_large)
+	let percent = Math.round(((area_large - area_small)/area_large)*100)
 
 	document.getElementById("result").innerHTML = " Den store skjermen er " + percent + " % større enn den miste skjermen. Og de er henholdsvis " + area_large + " cm^2 og " + area_small + " cm^2.";
 }

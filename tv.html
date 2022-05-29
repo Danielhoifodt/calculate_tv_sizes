@@ -25,25 +25,24 @@
 </head>
 <body>
 <div class="container">
-    <div class="flex-row m-5">
-        <div class="col-4">
-            <div class="form-group my-2">
-                <input type="number" id="large" class="form-control" />
-                <label class="form-label" for="large">Tommer på den største skjermen</label>
-            </div>
-            <div class="form-group my-2">
-                <input type="number" id="small" class="form-control" />
-                <label class="form-label" for="small">Tommer på den minste skjermen</label>
+        <div class="flex-row m-5">
+            <div class="col-4">
+                <div class="form-group my-2">
+                    <input type="number" pattern="\d+" id="large" class="form-control" required/>
+                    <label class="form-label" for="large">Tommer på den største skjermen</label>
+                </div>
+                <div class="form-group my-2">
+                    <input type="number" pattern="\d+" id="small" class="form-control" required/>
+                    <label class="form-label" for="small">Tommer på den minste skjermen</label>
+                </div>
             </div>
         </div>
+        <div class="flex-row m-5">
+            <div class="col">
+                <button type="button" onclick="calculate();" class="btn btn-primary">Regn ut</button>
+            </div>
 
-    </div>
-    <div class="flex-row m-5">
-        <div class="col">
-            <button type="button" onclick="calculate();" class="btn btn-primary">Regn ut</button>
         </div>
-
-    </div>
     <div class="flex-row m-5">
         <div class="col">
             <p>Resultat:<span id="result"></span></p>
